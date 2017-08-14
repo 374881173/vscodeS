@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			textarea{
+				width: 300px;
+				height: 100px;
+			}
+			span{
+				font: 12px/1.5em 微软雅黑;
+			}
+			span.red{
+				color: red;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var bt1=document.getElementById("bt1");
+				var sp1=document.getElementById("sp1");
+				var t1=document.getElementById("t1");
+				t1.onkeyup=t1.onkeydown=function(){
+					if(this.value.length<=140){
+						sp1.innerHTML="您还可以输入"+(140-this.value.length)+"个字";
+						t1.style.background="#fff";
+						bt1.onclick=null;
+					}else{
+						sp1.innerHTML="您已超出<span class='red'>"+(this.value.length-140)+"</span>个字"
+						bt1.onclick=function(){
+							var i=1;
+							var sid=setInterval(function(){
+							switch(i++){
+								case 1:
+								t1.style.background="#990";
+								break;
+								case 2:
+								t1.style.background="#900";
+								break;
+								case 3:
+								t1.style.background="#090";
+								clearInterval(sid);
+								break;
+							}
+							},500);
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<textarea id="t1" cols="50" rows="50"></textarea>
+		<span id="sp1">您还可以输入140个字</span>
+		<input type="button" id="bt1" value="提交" />
+	</body>
+</html>

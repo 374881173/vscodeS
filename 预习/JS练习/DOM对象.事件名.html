@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var p1=document.getElementById("p1");
+				p1.onclick=function(){
+					alert("你触发了onclick事件");
+				}
+				p1.onclick=function(){
+					alert("你又触发了onclick事件");
+				}
+			}
+		</script>
+		<style type="text/css">
+			p{
+				background:#ff0;
+				color: #000;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">测试哈哈</p>
+	</body>
+</html>

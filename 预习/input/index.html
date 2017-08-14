@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			span{
+				color: #f00;
+			}
+		</style>
+		<script type="text/javascript">
+			function validate(){
+//				验证用户名为空报错，并取消提交事件
+                var userName=document.getElementById("userName");
+                var userNameyz=document.getElementById("userNameyz");   
+                console.log(userName);
+                if(userName.value==""){
+                	userNameyz.innerHTML="用户名不能为空";
+//              	取消当前事件
+                      event.preventDefault();
+                	
+                }  
+//              验证密码不能为空
+                var pwd1=document.getElementById("pwd1");
+                var pwd1yz=document.getElementById("pwd1yz");
+                if(pwd1.value==""){
+                	pwd1yz.innerHTML="密码不能为空";
+                	
+                }
+               
+                //验证不选择性别报错
+                	var sex=document.getElementsByName("sex");
+                	var sexyz=document.getElementById("sexyz");
+                	if(!(sex[0].checked||sex[1].checked)){
+                		sexyz.innerHTML="请选择性别";
+                		event.preventDefault();
+                	}
+                //验证选择城市 ,没选城市报错 
+                var ctiy=document.getElementById("city");
+                var cityyz=document.getElementById("cityyz");
+                if(city.options[0].selected){
+                	cityyz.innerHTML="请选择城市";
+                	even.preventDefault();
+                }
+                
+			} 
+			function checkUserName(ole){
+				var userNameyz=document.getElementById("userNameyz"); 
+				 if(ole.value.length<=6){
+				 	userNameyz.innerHTML="不能少于6个字符";
+				 }else{
+				 	userNameyz.innerHTML="*";
+				 }
+			}	
+			//
+			function checkpwd2(){
+				var pwd1=document.getElementById("pwd1");
+				var pwd2=document.getElementById("pwd2");
+                var pwd2yz=document.getElementById("pwd2yz");
+                if(pwd2.value!==pwd1.value){
+                	pwd2yz.innerHTML="两次密码不一样";
+                	event.preventDefault();
+                }	
+			}	 
+			function cleartipspwd1(){
+	            var pwd2yz=document.getElementById("pwd2yz");
+	               pwd2.value="";
+	               pwd1.value="";
+	pwd2yz.innerHTML="*";
+	event.preventDefault();
+}
+		
+		</script>
+		<!--表单验证思路
+			1 验证单击提交按钮，为空的表单项，取消提交事件
+			--用户为空报错
+			--密码为空报错
+			--性别不选报错
+			--城市不选报错
+			2失去焦点-验证用化名不能少于6个字符  
+			获得焦点--错误提示去掉
+			3密码和确认密码不相等报错
+			获得焦点清除错误
+		-->
+	</head>
+	<body>
+	 <form action="check.html" method="post" name=" reg" onsubmit="validate();">
+	   用户名：
+	   <input tyoe="text" id="userName" size="26"  onblur="checkUserName(this);" onfocus="clearTips(this);"/><span id="userNameyz">*</span><br />
+	 	密码:
+	 	<input type="password" id="pwd1" onfocus="cleartipspwd1();" /><span id="pwd1yz">*</span><br />
+	 	确认密码:
+	 	<input type="password" id="pwd2" onblur="checkpwd2();"><span id="pwd2yz">*</span><br />
+	 	选择性别：
+	 	<input type="radio" name="sex" value="nan" />男
+	 	<input type="radio" name="sex" value="nv" />女<span id="sexyz"></span>
+	 	<br />
+	 	选择城市：
+	 	<select name="city" id="city">
+	 		<option selected>请选择城市</option>
+	 		<option value="hz">杭州</option>
+	 		<option value="bj">北京</option>
+	 		<option value="sh">上海</option>
+	 		<option value="tj">天津</option>
+	 	</select> <span id="cityyz">*</span>
+	 	<br />
+	 	<input type="submit"  value="注册"/>
+	 </form>
+	</body>
+</html>

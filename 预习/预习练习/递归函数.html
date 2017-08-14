@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function showTime(){
+				var myDate=new Date();
+				var div1=document.getElementById("div1");
+				div1.innerHTML=myDate.toLocaleString();
+				setTimeout(showTime,1000);
+			}
+		</script>
+	</head>
+	<body onload="showTime()">
+		<div id="div1">
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		table.datalist,td{
+			border:5px solid #ff0;
+			border-collapse: collapse;
+			width: 500px;
+			height: 300px;
+			}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var tab=document.createElement("table");
+			var the=tab.createTHead();
+			var tby=tab.createTBody();
+			var tbf=tab.createTFoot();
+			var tro=tab.insertRow();
+			for(var i=1;i<=10;i++){
+				var tce=tro.appendChild(document.createTextNode(i));
+			}
+			document.body.appendChild(tab);
+			tab.className="datalist";
+		}
+	</script>
+	<body>
+	</body>
+</html>

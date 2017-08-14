@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.MyIntegral{width:650px;margin:auto;padding:20px 0;}
+.MyIntegral h2{display:block;height:22px;line-height:22px;background:url(../Images/member/MyIntegralTitle.png) no-repeat;}
+.MyIntegral h2 span,.MyIntegral h2 p{display:block;height:22px;line-height:22px;font-size:12px;color:#ffffff;float:left;}
+.MyIntegral h2 span{width:13%;padding-left:3%;}
+.MyIntegral h2 p{width:80%;}
+.information p{display:block;padding-top:20px;font-size:12px;}
+
+.IntegralRecord{width:100%;overflow:hidden;padding:20px 0;}
+.IntegralRecord table{border-collapse:collapse;}
+.IntegralRecord table td,.IntegralRecord table th{border:1px solid #4b8c0f;text-align:center;}
+.IntegralRecord table th{font-size:15px;background-color:#8fc915;color:#ffffff;}
+.IntegralRecord table td{font-size:12px;vertical-align:middle;}
+.memberPaging{width:100%;padding-top:15px;text-align:center;padding-bottom:20px;}
+.memberPaging a{display:inline-block;height:15px;padding:0 4px;border:1px solid #8fc915;line-height:15px;font-size:12px;color:#333;}
+.hei{background-color:#8fc915;}
+.memberPaging a:hover{background-color:#8fc915;}
+.memberGiftListBox{width:100%;padding:30px 0px;height:210px;overflow:hidden;}
+.memberGiftListLeft,.memberGiftListCenter,.memberGiftListRight{float:left;height:210px;}
+.memberGiftListLeft,.memberGiftListRight{width:30px;cursor:pointer;}
+.memberGiftListLeft{background:url(../Images/member/leftClick.png) no-repeat center center;}
+.memberGiftListRight{background:url(../Images/member/rightClick.png) no-repeat center center;}
+.memberGiftListCenter{width:580px;height:210px;position:relative;overflow:hidden;}
+
+.memberGiftListCenter ul{display:block;height:210px;position:absolute;top:0px;left:0px;}
+.memberGiftListCenter ul li{display:block;width:145px;float:left;height:210px;display:block;overflow:hidden;}
+
+.memberGiftListCenter ul li span,.memberGiftListCenter ul li h3,.memberGiftListCenter ul li font,.memberGiftListCenter ul li a{display:block;width:100%;text-align:center;font-size:12px;}
+.memberGiftListCenter ul li span{height:120px;}
+.memberGiftListCenter ul li h3,.memberGiftListCenter ul li font,.memberGiftListCenter ul li a{height:30px;line-height:30px;}
+.memberGiftListCenter ul li a{background:url(../Images/HomePage/giftButton.png) no-repeat center center;color:#ffffff;}
+
+.orderSearch{width:100%;padding:20px 0;}
+.orderSearch p{display:block;height:30px;width:100%;font-size:12px;line-height:30px;}
+.orderSearch p input{vertical-align:middle;}
+.orderSearchInput{height:20px;width:300px;border:1px solid #389800;line-height:20px;}
+.orderSearchButton{width:75px;height:23px;border:0;background:url(../Images/gift/giftButton.jpg) no-repeat;line-height:23px;text-align:center;color:#ffffff;cursor:pointer;}
+.orderSearch ul,.orderSearch ul li{display:block;width:100%;}
+.orderSearch ul li{padding-top:10px;}
+.orderSearch ul li span,.orderSearch ul li font{font-size:12px;}
+
+
+.ModifyTheData{width:70%;margin:auto;padding:30px 0;overflow:hidden;}
+.ModifyTheData ul li,.ModifyTheData ul{display:block;width:100%;}
+.ModifyTheData ul li{padding-top:15px;float:left;}
+.ModifyTheData span{display:block;height:30px;float:left;line-height:30px;font-size:12px;}
+.ModifyTheDataText{width:30%;text-align:right;}
+.ModifyTheDataForm{width:70%;}
+.ModifyTheDataFormInput{height:20px;line-height:20px;border:1px solid #389800;width:60%;font-size:12px;+margin-top:3px;}
+.ModifyTheDataForm02 input{width:75px;height:23px;background:url(../Images/gift/giftButton.jpg) no-repeat;line-height:23px;text-align:center;color:#ffffff;border:0;cursor:pointer;}
+
+/*三个查询样式表*/
+.validationCodes{width:100px;height:20px;line-height:20px;border:1px solid #389800;vertical-align:middle;}
+.ModifyTheDataForm a{display:inline-block;padding:0px 0px 0px 10px;}
+.ModifyTheDataForm a img{vertical-align:middle;}
+.prompt{width:90%;margin:auto;padding:20px 0;clear:both;}
+.promptTitle{display:block;height:30px;line-height:30px;color:#389800;font-size:20px;}
+.promptContent{width:100%;line-height:30px;font-size:12px;}
+.AntiResults{clear:both;padding:30px 0px 0px 0px;}
+.AntiResults p{width:100%;line-height:30px;text-align:left;color:red;font-size:12px;}
+.AntiResults h1{text-align:left;color:red;font-size:16px;}

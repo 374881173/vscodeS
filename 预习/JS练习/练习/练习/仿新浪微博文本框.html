@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span{
+				font-size: 12px;
+				line-height: 15em;
+				color: #666;
+			}
+			span.sp1{
+				font-weight: bold;
+				font-family:poller-one;
+			}
+			span.red{
+				color: #f00;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var txt1=document.getElementById("txt1");
+				var bt1=document.getElementById("bt1");
+				var sp1=document.getElementById("sp1");
+				txt1.onkeyup=function(){
+					if(txt1.value.length<=140){
+						sp1.innerHTML="还可以输入"+(140-txt1.value.length)+"字";
+					}else{
+					bt1.onclick=function(){
+						var i=1;
+						var sid=setInterval(function(){
+							switch(i++){
+								case 1:
+								txt1.style.backgroundColor="#dfaaaa";
+								 break;
+								 case 2:
+								 txt1.style.backgroundColor="#d46262";
+								 break;
+								 case 3:
+								 txt1.style.backgroundColor="#ff0";
+								 break;
+								 case 4:
+								 txt1.style.backgroundColor="#f99";
+								 break;
+							}
+						},500);
+						if(i==4){
+							clearInterval(sid);
+						}
+						
+					}
+					 sp1.innerHTML="<span class='red'>已超出"+(txt1.value.length-140)+"字</span>"
+					}
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<textarea id="txt1" cols="50" rows="10"></textarea><span id="sp1">你还可以输入140个字</span>
+		<input type="button" value="发出"  id="bt1"/>
+	</body>
+</html>

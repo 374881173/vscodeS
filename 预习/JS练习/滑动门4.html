@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 div{
+				background: #900;
+				width: 200px;
+				height: 200px;
+				color: #fff;
+				display: none;
+			}
+			.active{
+				background: #ff0;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var div1=document.getElementById("div1");
+				var divs=div1.getElementsByTagName("div");
+				var inputs=div1.getElementsByTagName("input");
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].index=i;
+					inputs[i].onclick=function(){
+						for(var i=0;i<inputs.length;i++){
+							inputs[i].className="";
+							divs[i].style.display="none";
+						}
+						this.className="active";
+						divs[this.index].style.display="block";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<input type="button" value="按钮1" /></input>
+			<input type="button" value="按钮2" /></input>
+			<input type="button" value="按钮3" /></input>
+			<input type="button" value="按钮4" /></input>
+			<div style="display: block;">看见过年少的你</div>
+			<div>我在人群中，你在夜幕里</div>
+			<div>寻找另一个自己</div>
+			<div>别说我们来不及，已经来不及，来不及翻山越冷</div>
+		</div>
+	</body>
+</html>

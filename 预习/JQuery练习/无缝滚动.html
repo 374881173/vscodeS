@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动</title>
+	<style type="text/css">
+	img{
+		float: left;
+		width: 150px;
+		height: 80px;
+	}
+		#div1{
+			border: 3px solid #F00;
+			width: 900px;
+			height: 80px;
+			position: relative;
+			overflow: hidden;
+		}
+		#pics{
+			width: 1800px;
+			height: 80px;
+			position: absolute;
+		}
+	</style>
+	<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>	
+	<script type="text/javascript">
+		$(function(){
+			function move(){
+				$("#pics").animate({"left":"-900px"},5000,"swing",function(){
+				$("#pics").css("left","0px");
+				move();
+			});
+			}move();
+			$("#pics").mouseover(function(){
+				$("#pics").stop(true,false);
+			})
+			$("#pics").mouseout(function(){
+				move();
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<div id="pics">
+		<img src="img/jjx1.jpg">
+		<img src="img/jjx2.jpg">
+		<img src="img/jjx3.jpg">
+		<img src="img/jjx4.jpg">
+		<img src="img/jjx5.jpg">
+		<img src="img/jjx6.jpg">
+		<img src="img/jjx1.jpg">
+		<img src="img/jjx2.jpg">
+		<img src="img/jjx3.jpg">
+		<img src="img/jjx4.jpg">
+		<img src="img/jjx5.jpg">
+		<img src="img/jjx6.jpg">
+		</div>
+	</div>
+</body>
+</html>

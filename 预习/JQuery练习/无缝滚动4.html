@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	  #div{width:882px;height:98px;border:3px solid #090;position:relative;left:200px;top:100px;overflow: hidden;}
+    #div1{width:1764px;height:98px;position:absolute;left:0px;}
+</style>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+	$(function(){
+		var sid;
+		function move(){
+			sid=setInterval(function(){
+				$("#div1").css({"left":"-=1px"});
+				if($("#div1").css('left')=='-882px'){
+					$("#div1").css({"left":0})
+				}
+			},10);
+		}
+		$("#div").mouseover(function(){
+			clearInterval(sid);
+		})
+		$("#div").mouseout(function(){
+			move();
+		})
+		move();
+	})
+</script>
+<body>
+	<div id="div">
+		<div id="div1">
+			<img src="img/jjx1.jpg" alt=""><img src="img/jjx2.jpg" alt=""><img src="img/jjx3.jpg" alt=""><img src="img/jjx4.jpg" alt=""><img src="img/jjx5.jpg" alt=""><img src="img/jjx6.jpg" alt=""><img src="img/jjx1.jpg" alt=""><img src="img/jjx2.jpg" alt=""><img src="img/jjx3.jpg" alt=""><img src="img/jjx4.jpg" alt=""><img src="img/jjx5.jpg" alt=""><img src="img/jjx6.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

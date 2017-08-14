@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>	
+		<script type="text/javascript">
+			$(function(){
+				$("input").focus(function(){
+//					alert("已经出发");
+					$(this).css({"background":"#090"});
+				});
+				$("input").triggerHandler ("focus");
+			}); 
+		</script>
+	</head>
+	<body>
+		
+		<input type="text"   />
+	</body>
+</html>

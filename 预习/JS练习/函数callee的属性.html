@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			(function(a){
+				if(a<=5){
+					alert(a);
+					arguments.callee(++a)
+				}
+			})(1)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

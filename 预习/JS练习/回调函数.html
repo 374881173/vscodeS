@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+//			回调函数:把函数作为实参传递,被传递的函数称为回调函数。
+			function a(){   //  回调函数
+				return 1;
+			}
+			function b(){   //  回调函数
+				return 2;
+			}
+			function add(x,y){
+				return a()+b();
+			}
+			alert(add(a,b));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

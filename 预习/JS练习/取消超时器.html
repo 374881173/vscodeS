@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var sid=setTimeout(function(){
+					alert("时间到了");
+				},3000);
+				var tips=document.getElementById("tips");
+				tips.onclick=function(){
+					clearTimeout(sid);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="清楚定时器" id="tips" />
+	</body>
+</html>

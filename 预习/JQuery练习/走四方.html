@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				border: 1px solid #990;
+				color: #fff;
+				background: #000;
+				position: absolute;
+				width: 100px;
+				height: 100px;
+				font: 10px/1.5em 微软雅黑;
+				text-align: center;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				function loop(){
+				$("div").animate({"left":"+=200"},3000,"swing").animate({"top":"+=200"},3000,"swing").animate({"left":"-=200"},3000,"swing").animate({"top":"-=200"},3000,function(){
+					loop();
+				})};
+				$("#bt1").click(function(){
+					loop();
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" id="bt1" value="999" />
+		<div id="div1">测试哈哈</div>
+	</body>
+</html>

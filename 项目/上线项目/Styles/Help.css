@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.Help{width:95%;margin:auto;padding:20px 0;}
+.Help ul li{display:block;padding:20px 0;}
+.HelpTitle{display:block;height:30px;line-height:30px;font-size:20px;font-weight:bold;}
+.HelpContent{width:100%;overflow:hidden;}
+.HelpContent p{display:block;line-height:30px;font-size:12px;color:#4d4d4d;padding:20px 0;}
+.HelpContent img{display:block;margin:auto;padding:20px 0;}

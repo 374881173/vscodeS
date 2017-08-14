@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background: #990;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#bt1").click(function(){
+					$("div").animate({"left":"+=200px"},3000,"swing").animate({"left":"-=200px"},3000,"swing")
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" name="bt1" id="bt1" value="666" />
+		<div id="div1">测试哈哈</div>
+	</body>
+</html>

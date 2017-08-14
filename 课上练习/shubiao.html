@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标划入划出</title>
+		<script type="text/javascript">
+			
+			function change(flag){
+				var sp1=document.getElementById("sp1");
+				if(flag==0){
+					sp1.src="img/www.Gm1.cn010.jpg";
+				}else{
+					sp1.src="img/www.Gm1.cn011.jpg";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img id="sp1" src="img/www.Gm1.cn010.jpg" width="200" onmouseover="change(0);" onmouseout="change(1);" />
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>改变事件</title>
+		<script type="text/javascript">
+			function ss(){
+				alert("你触发了改变事件");
+			}
+			function qq(){
+				alert("你出发了改变事件");
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" onchange="ss();" />
+		<select onchange="qq();">
+			<option value="a">a</option>
+			<option value="d">d</option>
+			<option value="c">c</option>
+			<option value="b">b</option>
+		</select>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>仿百度关键字</title>
+		<style type="text/css">
+			#keywords{
+				position: absolute;
+				top: 200px;
+				left: 500px;
+				width: 500px;
+				height: 50px;
+			}
+			#bt1{
+				position:absolute;
+				width:200px;
+				height:56px;
+				top: 200px;
+				left:1000px;
+			}
+			#info{
+				top: ;
+				left: ;
+				border: 0px solid #ccc;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			Window.onload=function(){
+				var keywords=document.getElementById("keywords");
+				var bt1=document.getElementById("bt1");
+				var info=document.getElementById("info");
+				bt1.onclick=function(){
+				var myData=new Date();
+				var ms=myData.getTime()+10*24*3600*1000;
+				myData.setTime(ms);
+				var data="keywords"+ms+"="+encodeURI(keywords.value);
+				document.cookie=data+"; expires="+myData().toGMTString();
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<input type="text"  id="keywords" value="" />
+		<div id="info"></div>
+		<input type="button" id="bt1" value="百度一下">
+	</body>
+</html>

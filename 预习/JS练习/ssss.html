@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function add(x,y){
+				return x()+y();
+			}
+			alert(add(function(){
+				return 1;
+			},function(){
+				return 2;
+			}
+			));
+			alert(add(function(){
+				return 4;
+			},function(){
+				return 5;
+			}
+			));
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

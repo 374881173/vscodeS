@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+		<meta charset="UTF-8">
+		<title>99乘法表</title>
+		<script type="text/javascript">
+			document.write("<table border='1' width='900' cellspacing='0'>");
+			document.write("<tr>");
+			document.write("<td><b>*</b></td>");
+			for(var i=1;i<=9;i++){
+			document.write("<td>"+i+"</td>");
+			}
+			document.write("</tr>");
+			for(var i=1;i<=9;i++){
+			document.write("<tr>");
+			document.write("<td>"+i+"</td>");
+			for(var j=1;j<=9;j++){
+				document.write("<td>");
+				document.write(i+"*"+j+"="+i*j);
+				document.write("</td>");
+			}
+			document.write("</tr>");
+		}
+			
+			document.write("</table>");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

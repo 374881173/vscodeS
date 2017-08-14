@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>获得焦点和失去焦点</title>
+		<script type="text/javascript">
+			function tips1(){
+				var sp1=document.getElementById("sp1");
+				sp1.innerHTML="触动了获取焦点事件";
+			}
+			function tips2(){
+				var sp1=document.getElementById("sp1");
+				sp1.innerHTML="触动了失去焦点事件";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" onfocus="tips1();" onblur="tips2();" /><span id="sp1"></span>
+	</body>
+</html>
+
+
+

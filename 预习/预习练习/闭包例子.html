@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function test(arg){
+				var y=function(){
+					return arg;
+				}
+				arg++;
+				return y;
+			}
+			var a=test(123);
+			alert(a());
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

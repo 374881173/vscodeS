@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			if(-[1,]){
+				window.addEventListener("load",function(){
+					var p1=document.getElementById("p1");
+					p1.addEventListener("click",function(){
+						alert("你触发了click事件");
+					});
+					p1.addEventListener("click",function(){
+						alert("你又触发了click事件");
+					})
+				})
+			}else(
+				window.attachEvent("onload",function(){
+					var p1=document.getElementById("p1");
+					p1.attachEvent("onclick",function(){
+						alert("你you触发了IE6-7-8的事件");
+					});
+					p1.attachEvent("onclick",function(){
+						alert("你触发了IE6-7-8的事件");
+					});
+					
+				})
+			)
+		</script>
+		<style type="text/css">
+			#p1{
+				background:#ff0;
+				font-size: 12px;
+			}	
+		</style>
+	</head>
+	<body>
+		<p id="p1">测试哈哈</p>
+	</body>
+</html>

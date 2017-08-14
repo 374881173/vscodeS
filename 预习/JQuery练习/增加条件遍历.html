@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				border: 1px solid #990;
+				width: 882px ;
+				height: 98px;
+				position: absolute;
+				left: 200px;
+				overflow: hidden;
+				
+			}
+			#div2{
+				width: 1764px;
+				height: 98px;
+				position: relative;
+			}
+			img{
+				float: left;
+				position: relative;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+					function none(){
+					$("#div2").animate({"left":"-882px"},5000,"linear",function(){
+						$("#div2").css({"left":"0px"});
+						none();
+					});
+				};
+				none();
+			$("#div2").mouseover(function(){
+					$("#div2").stop(true,false)
+					});
+			$("#div2").mouseout(function(){
+				none();
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<div id="div1">
+		<div id="div2">
+			<img src="img/jjx1.jpg">
+			<img src="img/jjx2.jpg">
+			<img src="img/jjx3.jpg">
+			<img src="img/jjx4.jpg">
+			<img src="img/jjx5.jpg">
+			<img src="img/jjx6.jpg">
+			<img src="img/jjx1.jpg">
+			<img src="img/jjx2.jpg">
+			<img src="img/jjx3.jpg">
+			<img src="img/jjx4.jpg">
+			<img src="img/jjx5.jpg">
+			<img src="img/jjx6.jpg">
+			
+		</div>
+	</div>
+	</body>
+</html>

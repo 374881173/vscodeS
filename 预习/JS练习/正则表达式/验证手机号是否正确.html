@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				font-size: 12px;
+				color: #666;
+			}
+			.red{
+				color: red;
+			}
+		</style>
+		<script src="../js/验证手机号.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			addEvent(window,"load",function(){
+				var spa1=document.getElementById("spa1");
+				var input1=document.getElementById("input1");
+				addEvent(input1,"blur",function(){
+					var reg=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+					if(!reg.test(input1.value)){
+						spa1.innerHTML="手机号不正确";
+						spa1.className="red";
+					}else{
+						spa1.innerHTML="";
+					}
+				});
+				addEvent(input1,"focus",function(){
+					spa1.innerHTML="";
+				})
+			})
+			
+		</script>
+	</head>
+	<body>
+		手机号：<input type="text" id="input1" /><span id="spa1"></span>
+	</body>
+</html>

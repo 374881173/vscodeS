@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{
+				border: none;
+				background: none;
+				padding: 0px;
+				outline: none;
+			}
+			#container input{
+				float: left;
+				font-size: 20px;
+				border-top: 2px solid #aaa;
+				
+				padding: 0px 20px;
+				margin-bottom: 10px;
+			}
+			#container div{
+				clear: left;
+				width:320px;
+				height: 300px;
+				border-top: 1px solid #ddd;
+				border-bottom: 1px solid #aaa;
+				display: none;
+			}
+			#container input.active{
+				border-top:2px solid #f00;
+				color: #f00;
+				font-weight: bold;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+			var buts=document.getElementById("container").getElemnetsByTagName("input");
+			var divs=document.getElementById("container").getElemnetsByTagName("div");
+			for(var i=0;i<buts.length;i++){
+				buts[i].onmouseover=function{
+					buts[i].index=i;
+					for(var i=0;i<buts.length){
+						buts[i].className="";
+					}
+					this.className="active";
+					divs[this.index].style.display="block";
+				}
+			}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+		<input type="button" value="要闻" class="active" />
+		<input type="button"  value="地区"/>
+		<input type="button"  value="军事"/>
+		<input type="button"  value="天气"/>
+		<div style="display: block;">要闻选项卡</div>
+		<div>地区选项卡</div>
+		<div>军事选项卡</div>
+		<div>天气选项卡</div>
+		</div>
+	</body>
+</html>

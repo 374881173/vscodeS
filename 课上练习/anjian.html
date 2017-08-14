@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style >
+			.qq{
+			 color:#f00;
+			}
+			.pp{
+				color: #000;
+			}
+		</style>
+		<script type="text/javascript">
+			
+				function check(){
+					var sp1=document.getElementById("sp1");
+					var tips=document.getElementById("tips");
+			       if(sp1.value.length<=10){
+			         tips.innerHTML=""+sp1.value.length+"";
+			         tips.className="pp";
+			       }else{
+			         tips.value=""+sp1.value.length+"";	
+	     			tips.className="qq";			       }
+				}
+			
+		</script>
+	</head>
+	<body>
+		<textarea id="sp1" name="ss" rows="10" cols="20" onkeyup="check();" ></textarea>已经输入<span id="tips">&nbsp;</span>字
+	</body>
+</html>

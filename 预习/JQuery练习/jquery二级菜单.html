@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			div{
+				margin-left: 10px;
+				float: left;
+				width: 100px;
+				
+				cursor: pointer;
+			}
+			h3{
+				text-align: center;
+				margin: 0px;
+				padding: 0px;
+				background: #090;
+			}
+			ul{
+				text-align: center;
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+				display: none;
+			}
+			li{
+				border: 1px solid #090;
+				background: #900;
+				color:#fff;
+			}
+			.active{
+				background: #ddd;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").mouseover(function(){
+					$(this).addClass("active").children("ul").show().end().siblings().removeClass("active").children("ul").hide();
+				});
+				$("div").mouseout(function(){
+					$(this).removeClass("active").children("ul").hide();
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<h3>导航1</h3>
+			<ul>
+				<li><a href="">link1</a></li>
+				<li><a href="">link2</a></li>
+				<li><a href="">link3</a></li>
+			</ul>
+		</div>
+		<div>
+			<h3>导航2</h3>
+			<ul>
+				<li>link1</li>
+				<li>link2</li>
+				<li>link3</li>
+			</ul>
+		</div>
+		<div>
+			<h3>导航3</h3>
+			<ul>
+				<li>link1</li>
+				<li>link2</li>
+				<li>link3</li>
+			</ul>
+		</div>
+	</body>
+</html>

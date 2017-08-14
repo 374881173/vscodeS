@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function Student(name,age,sex){
+				var obj={};
+				obj.name=name;
+				obj.age=age;
+				obj.sex=sex;
+				obj.study=function(){
+					alert("好好学习");
+				}
+				obj.sports=function(){
+					alert("足球");
+				}
+				return obj;
+			}
+			var stu1=Student("tom",19,"男");
+			var stu2=Student("jarry",19,"女");
+			alert(stu1.name);
+			alert(stu2.name);
+			alert(stu1.study==stu2.study);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

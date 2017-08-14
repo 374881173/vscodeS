@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="css/密码强度验证.css"/>
+	<style type="text/css">
+				body{
+				font-size: 12px;
+				color: #333;
+				font-family: "微软雅黑";
+			}
+			span.red{
+				color: #ff0;
+			}
+			span.green{
+				color: #090;
+			}
+			span{
+				display: none;
+				width: 22px;
+				padding-left: 10px;
+				color: #fff;
+				margin-left: 2px;
+			}
+			span#sp1{
+				background: #c00;
+			}
+			span#sp2{
+				background: #ff0;
+			}
+			span#sp3{
+				background: #0f0;
+			}
+			.red{
+				color: #f00;
+			}
+			div#div2{
+				color: #FF0000;
+				display: none;
+			}
+			input#pwd{
+				width: 232px;
+			}
+
+	</style>
+	</head>
+	<body>
+		<form name="login">
+			密码:<input type="password"  name="pwd" id="pwd"/>
+			<div id="yz">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6-16个字符区分大小写<span id="ruo">弱</span><span id="zd">中</span><span id="qiang">强</span>
+			</div>
+			<div id="yzerror">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码长度应为6-16位字符</div>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: 2px solid #900;
+				width: 600px;
+				height: 200px;
+				overflow: hidden;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("img").mouseover(function(){
+				$(this).animate({"width":"700"},400,"swing");	
+				}).mouseout(function(){
+					$(this).animate({"width":"600"},400,"swing");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<img src="img/car.jpg" />
+		</div>
+	</body>
+</html>

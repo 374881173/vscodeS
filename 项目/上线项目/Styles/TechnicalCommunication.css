@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.TechnicalCommunication{width:100%;overflow:hidden;}
+.TechnicalCommunicationList{width:650px;margin:auto;overflow:hidden;padding:20px 0;}
+.TechnicalCommunicationList ul li{display:block;width:100%;overflow:hidden;border-bottom:1px dashed #ccc;padding:10px 0;}
+.TechnicalCommunicationList ul li h2{display:block;height:30px;font-size:13px;font-weight:bold;line-height:30px;}
+.TechnicalCommunicationList ul li h2 a{color:#389800;}
+.TechnicalCommunicationList ul li .simpleContent{width:100%;overflow:hidden;line-height:30px;font-size:12px;color:#4d4d4d;}
+.paging{width:95%;margin:auto;text-align:center;padding:20px 0;}
+.paging a{display:inline-block;border:1px solid #CCC;height:15px;line-height:15px;padding:0 5px;font-size:12px;overflow:hidden;color:#4d4d4d;}
+.red{background-color:#b3cb7d;}
+
+.TechnicalCommunicationContentBox{width:90%;margin:auto;padding:30px 0;}
+.TechnicalCommunicationContentPageTitle{display:block;height:40px;line-height:40px;text-align:center;font-size:15px;font-weight:bold;color:#389800;}
+.TechnicalCommunicationContentPage{width:100%;line-height:30px;color:#4d4d4d;font-size:12px;}
+.paging span{vertical-align:middle;}
+.pagingInput{height:15px;border:1px solid #CCC;font-size:12px;width:30px;line-height:15px;vertical-align:middle;+vertical-align:auto;vertical-align:text-top\0;_vertical-align:text-bottom;_margin-top:3px;}
+.pagingButtons{height:17px;width:36px;line-height:17px;text-align:center;font-size:12px;background:url(../Images/gift/but.jpg) no-repeat;cursor:pointer;border:0;vertical-align:middle;+vertical-align:auto;vertical-align:text-top\0;_vertical-align:text-bottom;_margin-top:3px;}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function setcookie(name,value,day){
+				var myDate=new Date();
+				var ms=myDate.setTime();
+				var day10=ms+day*24*3600*1000;
+				myDate.setTime(day10);
+				document.cookie=name+"="+value+"; expires="+myDate.toGMTString();
+				
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

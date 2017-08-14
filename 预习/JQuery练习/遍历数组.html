@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			var json='[{"name":"tom","age":19,"sex":"男"},{"name":"jarry","age":19,"sex":"男"},{"name":"susan","age":19,"sex":"男"}]'
+			json=$.parseJSON(json);
+			var str="";
+			$.each(json,function(index,value){
+				str+="<p>姓名:"+json[index].name+"年龄:"+json[index].age+"性别:"+json[index].sex+"</p>";
+			});
+			$("div").append(str);
+		})
+		
+			
+		</script>
+		<style type="text/css">
+			#div1{
+				border: 2px solid #990;
+				color: #000;
+				width: 200px;
+				height: 200px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+	</body>
+</html>

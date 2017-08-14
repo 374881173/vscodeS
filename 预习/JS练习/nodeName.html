@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background: #990;
+				color: #fff;
+				border: 5px solid #ff0;
+				width: 200px;
+				height: 200px;
+			}
+			p{
+				background: #f00;
+				color: #fff;
+				border: 5px solid #ff0;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1" title="测试哈哈" >
+			<span id="s1">aaa</span>
+			测试哈哈
+			
+		</div>
+		
+		<p id="p1">这是P标记</p>
+		<input type="button" value="点击移动p1到div1内部" id="bt1"/>
+	</body>
+	<script type="text/javascript">
+			var div1=document.getElementById("div1");
+			var p1=document.getElementById("p1");
+			var bt1=document.getElementById("bt1");
+			var s1=document.getElementById("s1")
+			bt1.onclick=function(){
+				div1.insertBefore(p1,s1);
+			}
+	</script>
+</html>

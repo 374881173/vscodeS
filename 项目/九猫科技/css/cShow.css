@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: #4cae4c!important;
+}
+.middle {
+  vertical-align: middle;
+  display: inline-block;
+}
+.absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.navbar {
+  width: 100%;
+  min-width: 1200px;
+  height: 120px;
+}
+.navbar > div {
+  height: 120px;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.navbar > div > .logo {
+  height: 120px;
+  line-height: 120px;
+  float: left;
+  vertical-align: middle;
+  display: inline-block;
+}
+.navbar > div > .logo > img {
+  vertical-align: middle;
+  display: inline-block;
+}
+.navbar > div > .navBox {
+  padding: 0px;
+  height: 120px;
+  line-height: 120px;
+  position: absolute;
+  right: 100px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.navbar > div > .navBox > ul > li {
+  height: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  list-style: none;
+  float: left;
+}
+.navbar > div > .navBox > ul > li > a {
+  padding: 40px;
+  color: #2F2F2F;
+  height: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+.navbar > div > .navBox > ul > li > a:hover {
+  color: #4cae4c!important;
+}
+.navbar > div > div:last-child {
+  height: 120px;
+  line-height: 120px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.navbar > div > div:last-child > a {
+  height: 120px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  color: #4cae4c;
+  position: absolute;
+  right: 0px;
+}
+.return {
+  width: 100px;
+  height: 120px;
+  line-height: 120px;
+  position: absolute;
+  right: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+.return > a {
+  height: 120px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: #4cae4c;
+}
+.caseBox {
+  width: 100%;
+  min-width: 1200px;
+  min-height: 790px;
+  background-color: #E9E9E9;
+}
+.caseBox > .title {
+  width: 1200px;
+  margin: 0 auto;
+}
+.caseBox > .title > p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 35px;
+  text-align: center;
+}
+.caseBox > .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.caseBox > .content > div {
+  width: 100%;
+  text-align: center;
+}
+.caseBox > .content > div > img {
+  width: 100%;
+  margin: 0 auto;
+}

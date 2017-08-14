@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1 div{
+				background: #ff0;
+				width: 200px;
+				height: 200px;
+				display: none;
+			}
+			.active{
+				background: #090;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var div1=document.getElementById("div1");
+				var divs=div1.getElementsByTagName("div");
+				var inputs=div1.getElementsByTagName("input");
+				for(var i=0;i<inputs.length;i++){
+					inputs[i].index=i;
+					inputs[i].onclick=function(){
+						for(var i=0;i<inputs.length;i++){
+							inputs[i].className="";
+							divs[i].style.display="none";
+						};
+						this.className="active";
+						divs[this.index].style.display="block";
+					};
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<input type="button" value="按钮1" />
+			<input type="button" value="按钮2" />
+			<input type="button" value="按钮3" />
+			<div style="display: block;">天道酬勤</div>
+			<div>致我们即将失去的青春</div>
+			<div>坚持不懈</div>
+		</div>
+	</body>
+</html>

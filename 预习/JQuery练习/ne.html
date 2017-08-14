@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background: #090;
+				width: 200px;
+				height: 200px;
+				position: relative;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").click(function(){
+					$(this).animate({"top":"600px"},3000,"easeOutElastic",function(){
+						alert("动画结束");
+					});
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			测试哈哈
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			function Student(name,age,sex){
+				this.name=name;
+				this.age=age;
+				this.sex=sex;
+				this.study=function(){
+					alert("好好学习");
+				}
+				this.sports=function(){
+					alert("足球");
+				}
+			}
+			var stu1=new Student("tom",19,"男");
+			var stu2=new Student("jarry",20,"女");
+			alert(stu1.name);
+			alert(stu2.name);
+			alert(stu1.study==stu2.study);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

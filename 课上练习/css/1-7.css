@@ -1,0 +1,13 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+h2{
+	color: #009;
+}
+p{
+	color: #FF0000;
+	text-decoration: underline;
+	font-size: 25px;
+    font-weight: bold;
+}

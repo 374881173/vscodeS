@@ -1,0 +1,139 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: url(../img/background.jpg);
+	color: #293331;
+	font: 13px 微软雅黑;
+	text-align: center;
+}
+a{
+	color: #293331;
+}
+a:hover{
+	background: #A7AA9E;
+}
+header h1 a,#topMenu ul li a,.blogItem h2 a{
+	text-decoration: none;
+}
+p{
+	line-height: 1.5em;
+	padding: 5px 0px;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+blockquote{
+	background: url(../img/body.gif) top left repeat-y;
+	font-size:14px ;
+	font-style: italic;
+	padding: 5px 0px 5px 30px;
+}
+ul,ol{
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+#container{
+	background: url(../img/spill.gif) no-repeat top right;
+	margin: 0 auto;
+	text-align: left;
+	width: 780px;
+}
+header{
+	background: url(../img/header.gif) no-repeat;
+	height: 109px;
+	padding: 0px 10px 0px 20px;
+}
+#topMenu{
+	background: url(../img/menubar.gif) no-repeat;
+	height: 48px;
+}
+#sidebar{
+	float: right;
+	padding: 20px 30px 10px 0px;
+	text-align: right;
+	width: 150px;
+}
+#mainContent{
+	background: url(../img/bottom.gif) no-repeat;
+	font-size: 12px;
+	height: 70px;
+	padding: 0px 10px 0px 20px;
+}
+header h1{
+	font-size: 48px;
+	font-weight: normal;
+	padding: 20px 0 0 170px;
+}
+header a:hover{
+	background: none;
+}
+#topMenu ul{
+	font-size: 24px;
+	line-height: 1em;
+	padding: 14px 30px 0 0 ;
+	text-align: right;
+}
+#topMenu li{
+	display: inline;
+}
+#topMenu a:hover{
+	background: url(../img/hr.gif) center center no-repeat;
+}
+.blogItem{
+	padding-bottom: 20px;
+}
+.blogItem h2 h3{
+	font-weight: normal;
+}
+.blogItem h2 a:hover,.blogItemh3 a:hover{
+	background: none;
+	text-decoration: underline;
+}
+.blogItem h2{
+	font-size: 24px;
+}
+.blogItem h3{
+	background: url(../img/hr.gif) bottom left no-repeat;
+	font-size: 14px;
+	padding-bottom: 6px;
+}
+.blogItem h3.blogMeta{
+	background-position:top left ;
+	padding: 6px 0 0 0 ;
+	text-align: right;
+}
+#sidebar h3{
+	font-size: 24px;
+	font-weight: normal;
+}
+#sidebar ul{
+	line-height: 1.8en;
+	list-style: none;
+	padding-bottom: 20px ;
+}
+#sidebar ul a{
+	text-decoration: none;
+}
+#conmments{
+	background: url(../img/hr.gif) bottom left no-repeat;
+}
+footer p{
+	padding: 30px 0 0 0;
+	text-align: center;
+}
+.floatR{
+	float: right;
+	margin-left:8px ;
+}
+.floatL{
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat{
+	clear: both;
+	height: 0px;
+	font-size: 1px;
+	line-height: 0px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>仿网易滑动门特效</title>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	    <style>
+	        body,h3{
+	        	margin: 0px;
+	        	padding: 0px;
+	        }
+	        #nav{      
+	        	padding-top:32px;
+	        	position: relative;
+	        }
+	        #nav a{
+	        	text-decoration: none;
+	        	font:20px/1.5em 宋体;
+	        	color: #333;
+	        	display: block;
+	        }	       
+	    	#nav .btn{
+	    		position: absolute;
+	    		width: 100px;height: 30px;
+	    		text-align: center;
+	    		border-top: 1px solid #ccc;
+	    		border-bottom: 1px solid #ccc;
+	    		border-left:1px solid #ccc;
+	    	}
+	    	
+	    	#nav .one{	   
+	    		 top:0px; 	
+	    		 left: 0px;
+	    	}
+	    	#nav .two{	   
+	    		  top:0px; 		
+	    		 left: 100px;
+	    	}
+	    	#nav .three{
+	    		top:0px;	    
+	    		left:200px;
+	    		border-right: 1px solid #ccc;
+	    	}
+	    	#nav .content{
+	    		background: #090;
+	    		width: 291px;
+	    		height: 200px;
+	    	    display: none;
+	    	    padding-left: 10px;
+	    	}
+	    	#nav .content ul{
+	    		list-style: none;
+	    	}
+	    	 #nav .active{
+	        	font-weight: bold;
+	        	background: #fff;
+	        	border-bottom: 1px solid #fff;
+	        }
+	    </style>
+	    <script>
+	    	$(function(){
+	    		$(".btn").mouseover(function(){
+	    			$(this).addClass("active").next(".content").show()
+	    			.end().siblings().removeClass("active").next(".content").hide();
+	    		});
+	    	});
+	    </script>
+	</head>
+	<body>
+		<div id="nav">
+		  <h3 class="btn one"><a href="javascript:;">新闻</a></h3>
+		  <div class="content" style="display: block;">
+		   	  好好学习，天天向上
+		   </div>
+		   <h3 class="btn two"><a href="javascript:;">图片</a></h3>		   
+		   <div class="content">
+		   	  致我们即将逝去的青春
+		   </div>
+		   <h3 class="btn three"><a href="javascript:;">军事 航空</a></h3>		   
+		   <div class="content">
+		   	  也许忘记才能靠经你
+		   </div>
+		</div>
+	</body>
+</html>

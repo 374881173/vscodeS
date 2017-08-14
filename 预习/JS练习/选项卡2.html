@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul,li{
+				margin: 0px;
+				padding: 0px;
+				float: left;
+				list-style: none;
+			}
+			li{
+				font-size: 20px;
+				border-top: 2px solid #aaa;
+				padding: 0px 20px;
+				margin-bottom:10px;
+			}
+			#container div{
+				clear:left;
+				width: 320px;
+				height: 300px;
+				border-top:1px solid #ddd ;
+				border-bottom:1px solid #ddd ;
+				display: none;
+			}
+			#nav{
+				overflow: hidden;
+			}
+			#nav li.active{
+				border-top: 2px solid #FF0000;
+				color: #FF0000;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var aLi=document.getElementById("nav").getElementsByTagName("li");
+				var aDiv=document.getElementById("container").getElementsByTagName("div");
+				for(var i=0;i<aLi.length;i++){
+					aLi[i].onmouseover=function(){
+							change(this);
+					}
+					}
+					function change(obj){
+						for(var i=0;i<aLi.length;i++){
+							if(obj==aLi[i]){
+								aLi[i].className="active";
+								aDiv[i].style.display="block";	
+							}else{
+								aLi[i].className="";
+								aDiv[i].style.display="none";
+							}
+						}
+					}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<ul id="nav">
+				<li class="active">要闻</li>
+				<li>地区</li>
+				<li>天气</li>
+				<li>军事</li>
+			</ul>
+			<div style="display: block;">要闻选项卡</div>
+			<div>地区选项卡</div>
+			<div>天气选项卡</div>
+			<div>军事选项卡</div>
+		</div>
+	</body>
+</html>

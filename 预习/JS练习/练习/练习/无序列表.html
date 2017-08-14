@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.nav{
+				width: 400px;
+				
+			}
+			.nav ul{
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			.nav a{
+				font-family: "微软雅黑";
+				font-size: 16px;
+				text-decoration: none;
+				display: block;
+				padding:5px 5px 5px 0px;
+			}
+			.nav li{
+				width: 150px;
+			}
+			.nav a:hover{
+				background: #009900;
+				color: #fff;
+			}
+			#first li{
+				background: #ccc;
+				border-bottom: 1px solid #fff;
+				position: relative;
+			}
+			#first ul{
+				position: absolute;
+				width: 150px;
+				top: 0px;
+				left: 150px;
+				display: none;
+			}
+			#first ul a:hover{
+				background: #0e0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<ul id="first">
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">企业文化</a></li>
+				<li><a href="#">企业新闻</a></li>
+				<li><a href="#">产品介绍</a>
+					<ul>
+						<li><a href="#">手机</a></li>
+						<li><a href="#">笔记本</a></li>
+						<li><a href="#">台式机</a></li>
+						<li><a href="#">数码相机</a></li>
+						<li><a href="#">办公耗材</a></li>
+						<li><a href="#">照相机</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+			var first=document.getElementById("first");
+			first.children.onmouseover=function(){
+				this.chlildren[i]=
+			}
+	</script>
+</html>

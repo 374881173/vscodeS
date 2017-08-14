@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/监听器.js"></script>
+		<script type="text/javascript">
+			addEvent(window,"load",function(){
+				var p1=doucument.getElementById("p1");
+				addEvent(p1,"click",function(){
+					alert("你触发了click事件");
+				})
+			})
+		
+		</script>
+		
+		<style type="text/css">
+			#p1{
+				background: #ff0;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="p1">测试哈哈哈哈</p>
+	</body>
+</html>

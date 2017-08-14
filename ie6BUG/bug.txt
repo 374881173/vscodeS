@@ -1,0 +1,3 @@
+第一个BUG
+最小高度问题，ie6里面最小高度是19px，小于19px的数也是19，解决方法，给该元素加overflow：hidden  
+第二个  ul，li在ie里面li浮动后会有一条缝，解决方法   加一个 vertical-algin：top；

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			class Person{
+				constructor(id,name,age,sex){
+					this.id=id;
+					this.name=name;	
+					this.age=age;
+					this.sex=sex;
+				}
+				other(){
+					alert("好好学习");
+				}
+				}
+				class Student extends Person{
+					constructor(id,name,age,sex,sno,sdept){
+						super(id,name,age,sex);
+						this.sno=sno;
+						this.sdept=sdept;
+					}
+					study(){
+						alert("天天向上");
+					}
+				}
+			
+			var stu1=new Student(199999,"sss","nan",19,11111,"asdsa")
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

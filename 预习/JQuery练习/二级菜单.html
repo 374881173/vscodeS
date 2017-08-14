@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				color: #fff;
+				float: left;
+				width: 100px;
+				margin-left:10px;
+				cursor: pointer;
+			}
+			h3{
+				text-align: center;
+				margin: 0px;
+				padding: 0px;
+				background: #009;
+				
+			}
+			ul{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				color: #000;
+				display: none;
+				text-align: center;
+			}
+			li{
+				border: 1px solid #090;
+				background: #900;
+				color:#fff;
+			}
+			.active{
+				background: #090;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").mouseover(function(){
+					$(this).addClass("active").children("ul").show().end().siblings().removeClass("active").children("ul").hide();
+				});
+				$("div").mouseout(function(){
+				$(this).removeClass("active").children("ul").hide();
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<div>
+			<h3>导航1</h3>
+				<ul>
+					<li>li1</li>
+					<li>li2</li>
+					<li>li3</li>
+				</ul>
+		</div>
+		<div>
+			<h3>导航2</h3>
+				<ul>
+					<li>li1</li>
+					<li>li2</li>
+					<li>li3</li>
+				</ul>
+		</div>
+		<div>
+			<h3>导航3</h3>
+				<ul>
+					<li>li1</li>
+					<li>li2</li>
+					<li>li3</li>
+				</ul>
+		</div>
+	</body>
+</html>

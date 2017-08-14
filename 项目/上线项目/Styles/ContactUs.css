@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.ContactUs{width:90%;margin:auto;padding:30px 0;background:url(../Images/contactUs/contactUsBg.png) no-repeat right bottom;}
+.ContactUs ul li{display:block;padding-top:30px;overflow:hidden;padding-left:50px;font-size:12px;}
+.ContactUs ul li h2{font-weight:bold;font-size:16px;}
+
+.ContactUs ul li span{color:#F30;}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#div1{
+				background: #900;
+				color: #FFFFFF;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 10px;
+			}
+			#bt1{
+				position: absolute;
+				top: 150px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+			var div1=document.getElementById("div1");
+			var bt1=document.getElementById("bt1");
+			var i=1;
+				bt1.onclick=function(){
+			       setInterval(function(){
+					div1.style.left=div1.offsetLeft+2+"px";
+					i++;
+				},30)
+			}
+				}
+		</script>
+	</head>
+	<body>
+		<div id="div1">测试哈哈</div>
+		<input type="button" id="bt1" value="点击" />
+	</body>
+</html>
+

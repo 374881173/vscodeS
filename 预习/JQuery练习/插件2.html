@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background: #909;
+				border: 1px solid #990099;
+				width: 200px;
+				height: 200px;
+				color: #fff;
+			}
+			
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jQuery1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").click(function(){
+					$(this).myTest().hide(5000);
+					});
+					$("input").click(function(){
+						$("#div1").myTest().show(5000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" id="div2" value="出"></input>
+		<div id="div1">测试哈哈</div>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color:#999;
+	font-size: 12px;
+}
+#bg{
+	margin-top: 25pxpx;
+	background: url(../img/bg1.jpg);
+	height: 590px;
+	width: 100%;
+	border-bottom:5px solid #fff;
+	border-top: 5px solid #fff;
+}
+#login{
+	height: 240px;
+	width: 350px;
+	margin: 100px 0 0 30px;
+	border-radius: 15px;
+	border: 3px solid #fff;
+	background: rgba(255,255,255,0.4);
+}
+h3{
+	text-align: center;
+	color: #8f5a0a;
+}
+#inputs input{
+	background: rgba(255,255,255,0.4) url(../img/login-sprite.png) no-repeat;
+	padding: 10px 10px 10px 30px;
+	width: 253px;
+	border: 2px solid #ccc;
+	border-radius:5px ;
+	font-family: 华文行楷;
+	font-size: 12px;
+}
+#inputs input:focus{
+	background-color: #fff;
+	border-color: #f90;
+	outline: none;
+	-o-box-shadow: 0 0 0 2px #e8c291 inset;
+}
+#username{
+	background-position:5px -8px !important ;
+}
+#password{
+	background-position: 5px -60px !important;
+}
+#submit{
+	margin: 0 0 0 20px;
+	background-color: #ffb94b;
+	background-image: -o-linear-gradient(top, #fddb6f, #ffb94b);
+	border-radius: 3px;
+	text-shadow: 0 3px 0 rgba(255,255,255,0.5);
+	border: 1px solid #d69e31 #e3a037 #d5982d #e3a037;
+	float: left;
+	height: 35px;
+	width: 120px;
+	padding: 0px;
+	cursor: pointer;
+	font: bold 15px Arial, Helvetica;
+	color: #8f5a0a;
+}

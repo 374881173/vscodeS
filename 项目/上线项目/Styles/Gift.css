@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.giftCashflowBox,.ForSuccessfulBox{width:630px;margin:auto;padding:40px 0px 20px 0px;overflow:hidden;}
+.giftCashflowImg{width:180px;float:left;overflow:hidden;}
+.giftCashflowImg img{width:130px;}
+.giftCashflowImformation{width:450px;float:left;overflow:hidden;}
+.giftCashflowImformation ul li{display:block;width:100%;padding-bottom:10px;font-size:12px;overflow:hidden;}
+.giftCashflowImformation ul li em,.giftCashflowImformation ul li font{color:red;font-size:12px;}
+.giftCashflowImformation h2 span{font-size:15px;font-weight:bold;}
+.number{width:30px;height:15px;border:1px solid #ccc;vertical-align:text-top;vertical-align:middle\9;_vertical-align:middle}
+.giftCashflowImformation ul{border-bottom:1px dashed #ccc;padding-bottom:15px;}
+.giftCashflowImformation h2{display:inline;}
+.paddingUl{padding-top:15px;}
+.goodsInput,.goods{float:left;line-height:30px;overflow:hidden;}
+.goods{width:30%;height:30px;text-align:left;}
+.goodsInput{width:70%;height:30px;}
+.goodsInputs{width:160px;height:20px;border:1px solid #3f9c09;line-height:20px;+margin-top:3px;}
+.goodsInputs220{width:260px;height:20px;border:1px solid #3f9c09;line-height:20px;+margin-top:3px;}
+.goodsRadio,.goodsRadios{vertical-align:middle;}
+.goodsInput a{display:block;width:75px;height:23px;float:left;line-height:23px;text-align:center;color:#ffffff;font-size:12px;background:url(../Images/gift/giftButton.jpg) no-repeat;}
+.goodsInput span.submitSpan{display:block;width:75px;height:23px;float:left;line-height:23px;text-align:center;color:#ffffff;font-size:12px;}
+.goodsInput span.submitSpan .submit{width:75px;height:23px;line-height:23px;text-align:center;color:#ffffff;font-size:12px;background:url(../Images/gift/giftButton.jpg) no-repeat;border:0;cursor:pointer;}
+
+
+.giftDescribe{width:630px;margin:auto;padding:20px 0;clear:both;}
+.giftDescribe h2{display:block;height:22px;width:95%;background:url(../Images/gift/giftTitle.jpg) no-repeat;line-height:22px;padding-left:15px;font-size:12px;color:#ffffff;font-weight:normal;}
+.giftDescribeContent{width:98%;padding:20px 0;font-size:12px;line-height:30px;}
+
+.ForSuccessfulBox h1 img{vertical-align:middle;}
+.ForSuccessfulBox h1{display:block;width:100%;overflow:hidden;text-align:center;font-size:20px;color:#4d4d4d;}
+.ForSuccessfulTexts{width:628px;padding:15px 0;margin:15px 0;border:1px solid #ff9051;backgournd-color:#fffce9;text-align:center;}
+.ForSuccessfulTexts p{color:#4d4d4d;font-size:12px;}
+.ForSuccessfulLinks{width:100%;padding:15px 0;}
+.ForSuccessfulLinks li{display:block;padding-top:10px;font-size:12px;}

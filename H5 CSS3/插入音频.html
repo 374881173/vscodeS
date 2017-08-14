@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload=function(){
+				var Audio1=document.getElementById("Audio1");
+				var bt1=document.getElementById("bt1");
+				bt1.onclick=function(){
+					if(Audio1.paused){
+						Audio1.play();
+						bt1.innerHTML="暂停";
+					}else{
+						Audio1.pause();
+						bt1.innerHTML="播放";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<audio src="mp3/sky.ogg" id="Audio1" controls></audio>
+		<br /><br />
+		<button id="bt1">播放</button>
+	</body>
+</html>

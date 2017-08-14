@@ -1,0 +1,26 @@
+body{
+	margin: 1px 0px 0px 0px;
+	background-color: #FFD8D9;
+	padding: 0px;
+	text-align: center;
+	font-size: 12px;
+	font-family: arial, helvetica, sans-serif;
+}
+#container{
+	position: relative;
+	margin: 0px auto 0px auto;
+	width: 700px;
+	text-align: left;
+}
+#globallink{
+	padding: 0px;
+	margin: 0px;
+}
+#globallink li{
+	list-style: none;
+	float: left;
+	width: 100px;
+}
+#globallink a{
+	display: block;
+}

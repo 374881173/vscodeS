@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1{
+				background: #009900;
+				width: 200px;
+				height: 200px;
+				cursor: pointer;
+			}
+		</style>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/jQuery3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("div").click(function(){
+					$(this).myTest().hide(5000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			测试哈哈
+		</div>
+	</body>
+</html>

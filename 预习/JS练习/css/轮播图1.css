@@ -1,0 +1,60 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+#container{
+	width: 520px;
+	height: 280px;
+	position: relative;
+	overflow: hidden;
+	margin:0px auto;
+	top: 100px;
+}
+#pics{
+	width: 3640px;
+	height: 280px;
+	position: absolute;
+	z-index: 1;
+}
+#pics img{
+	width: 520px;
+	height: 280px;
+	float: left;
+	border: 0px;
+}
+#dots{
+	width: 108px;
+	height: 20px;
+	background: url(../img/dot_bg.png);
+	position: absolute;
+	z-index: 2;
+	left: 206px;
+	bottom: 20px;
+}
+#dots span{
+	width: 12px;
+	height: 12px;
+	background: url(../img/dot.png);
+	float: left;
+	margin-left: 8px;
+	margin-top: 4px;
+	cursor:pointer;
+}
+#dots span.on{
+	background: url(../img/dot_on.png);
+}
+#prev{background: url(../img/prev.png); left:10px;
+}
+#next{background:url(../img/next.png); right:10px;z-index:2;
+}
+.click{
+	width: 30px;height: 50px;position: absolute;z-index:2;top:115px;display: none;
+}
+#container:hover .click{
+	display: block;
+}
+#prev:hover{background: url(../img/prev_on.png);}
+#next:hover{background: url(../img/next_on.png);}

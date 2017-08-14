@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size: 12px;
+				color: #333;
+				font-family: "微软雅黑";
+			}
+			span.red{
+				color: #ff0;
+			}
+			span.green{
+				color: #090;
+			}
+			span{
+				display: none;
+				width: 22px;
+				padding-left: 10px;
+				color: #fff;
+				margin-left: 2px;
+			}
+			span#sp1{
+				background: #c00;
+			}
+			span#sp2{
+				background: #ff0;
+			}
+			span#sp3{
+				background: #0f0;
+			}
+			.red{
+				color: #f00;
+			}
+			div#div2{
+				color: #FF0000;
+				display: none;
+			}
+			input#pwd{
+				width: 232px;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var $=function(_id){
+					var obj=document.getElementById(_id);
+					return obj;
+				}
+				var pwd=$("pwd");
+				var div1=$("div1");
+				var sp1=$("sp1");
+				var sp2=$("sp2");
+				var sp3=$("sp3");
+				var div2=$("div2");
+				var div3=$("div3");
+				var regNum=/[0-9]/;
+				var regStr=/[a-zA-Z]/;
+				var fStrNum=/\W/;
+				pwd.onkeyup=function(){
+					if(pwd.value.length<=16){
+							div1.style.display="inline-block";
+							div2.style.display="none"
+						if(pwd.value.length<6&&pwd.value.length>0){
+							div1.style.display="none";
+							div2.style.display="inline-block";
+						}else{
+							div1.style.display="inline-block";
+							div2.style.display="none";
+						}
+						if((pwd.value.length>=6 && regStr.test(pwd.value))||(pwd.value.length>=6 && regNum.test(pwd.value))){
+							sp1.style.display="inline-block";
+							sp1.style.background="#ff0";
+						}else if(pwd.value.length<6){
+							sp1.style.display="none";
+							sp2.style.display="none";
+							sp3.style.display="none";
+						}
+						if(pwd.value.length>=6 && regStr.test(pwd.value) && regNum.test(pwd.value)){
+							sp1.style.cssText="display:inline-block;background:#fc0";
+							sp1.innerHTML="&nbsp;";
+							sp2.style.cssText="display:inline-block;background:#fc0";
+						}else if((pwd.value.length>=6 && regStr.test(pwd.value))||(pwd.value.length>=6 && regNum.test(pwd.value))||(pwd.value.length>=6 && fStrNum.test(pwd.value))){
+							sp2.style.display="none";
+							sp1.innerHTML="弱";
+						}if(pwd.value.length>=6 && regStr.test(pwd.value) && regNum.test(pwd.value) && fStrNum.test(pwd.value)){
+							sp1.style.cssText="display:inline-block;background:#090";
+							sp1.innerHTML="&nbsp;";
+							sp2.style.cssText="display:inline-block;background:#090";
+							sp2.innerHTML="&nbsp;";
+							sp3.style.cssText="display:inline-block;background:#090";
+						}else if(pwd.value.length>=6 && regNum.test(pwd.value) && regStr.test(pwd.value)){
+							sp1.style.cssText="display:inline-block;background:#fc0";
+							sp1.innerHTML="&nbsp";
+							sp2.style.cssText="display:inline-block;background:#fc0";
+							sp2.innerHTML="中";
+							sp3.style.display="none";
+						}
+					}else{
+						div2.style.display="block";
+						div1.style.display="none";
+						sp1.style.display="none";
+						sp2.style.display="none";
+						sp3.style.display="none";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="login">
+			密码:<input type="password" name="pwd" id="pwd" />
+		</form>
+		<div id="div1">
+			6-16位字符区分大小写
+		</div>
+		<div id="div2">密码长度应为6-16位</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sp1">弱</span><span id="sp2">中</span><span id="sp3">强</span>
+	</body>
+</html>
